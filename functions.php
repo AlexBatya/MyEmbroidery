@@ -1,19 +1,18 @@
 <?php 
 
 add_action('wp_enqueue_scripts', function(){
-    wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css' );
+    wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/main.css' );
+    wp_enqueue_style('catalog', get_template_directory_uri() . '/assets/css/catalog.css' );
 
 
     wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
 
 	wp_enqueue_script( 'jquery');
-    wp_enqueue_script('slick', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'));
-    // wp_enqueue_script('sliders', get_template_directory_uri() . '/assets/slick-1.8.1/sliders.js', array('jquery'));
+    wp_enqueue_script('catalogMix', get_template_directory_uri() . '/assets/js/mixitup.min.js');
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'));
-
-    // wp_enqueue_script('popup', get_template_directory_uri() . '/assets/js/popup.js', array('jquery'));
-    // wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'));
+    wp_enqueue_script('catalogjs', get_template_directory_uri() . '/assets/js/catalog.js', array('jquery'));
+    wp_enqueue_script('slick', get_template_directory_uri() . '/assets/slick-1.8.1/slick/slick.min.js', array('jquery'));
     
 });
 

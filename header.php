@@ -1,26 +1,28 @@
-    
+
+
+ 
 <div class=" wrapper">
     <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__logo">
-                        <a href="#">
-                            <img class="header__logo-img" src="assets/img/logo.svg" alt="logo-header">
-                        </a>
+                        <!-- <a href="#">
+                            <img class="header__logo-img" src="<?php // bloginfo('template_url'); ?>/assets/img/logo.svg" alt="logo-header">
+                        </a> -->
+                        <?php the_custom_logo(array(
+                            'class' => 'header__logo-img'
+                        )); ?>
                     </div>
 
                     <ul class="header__top-list">
-                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#">Компания</a>
-                        </li>
-                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#">Каталог
-                                изделий</a></li>
-                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#">Помощь</a>
-                        </li>
+                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#"><?php  the_field('field_list_1'); ?></a></li>
+                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#"><?php  the_field('field_list_2'); ?></a></li>
+                        <li class="header__top-list--item"> <a class="header__top-list--link" href="#"><?php  the_field('field_list_3'); ?></a></li>
                     </ul>
-
+                        
                     <div class="header__burger">
-                        <img class="header__burger-img" src="assets/img/burger.svg" alt="burger">
+                        <img class="header__burger-img" src="<?php bloginfo('template_url'); ?>/assets/img/burger.svg" alt="burger">
                         <div class="header__burger-menu">
                             <div class="menu__btn-block">
                                 <!-- <div class="menu__btn-title">Одежда</div> -->
@@ -109,11 +111,11 @@
 
                             <div class="header__init">
                                 <a href="#" class="header__init-reg">
-                                    <img src="assets/img/user.svg" alt="Регистрация">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/user.svg" alt="Регистрация">
                                     Регистрация
                                 </a>
                                 <a href="#" class="header__init-auth">
-                                    <img src="assets/img/login.svg" alt="Войти">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/login.svg" alt="Войти">
                                     Войти
                                 </a>
                             </div>
@@ -128,30 +130,30 @@
                             </div>
 
                             <ul class="header__burger-soc soc">
-                                <li class="soc__item soc__item-1"><a class="header__soc-link" href="#"></a></li>
-                                <li class="soc__item soc__item-2"><a class="header__soc-link" href="#"></a></li>
-                                <li class="soc__item soc__item-3"><a class="header__soc-link" href="#"></a></li>
-                                <li class="soc__item soc__item-4"><a class="header__soc-link" href="#"></a></li>
-                                <li class="soc__item soc__item-5"><a class="header__soc-link" href="#"></a></li>
+                                <li class="soc__item soc__item-1"><a class="header__soc-link" href="tel:<?php the_field('phone_number') ;?>"></a></li>
+                                <li class="soc__item soc__item-2"><a class="header__soc-link" href="<?php the_field('vk'); ?>"></a></li>
+                                <li class="soc__item soc__item-3"><a class="header__soc-link" href="<?php the_field('instagram'); ?>"></a></li>
+                                <li class="soc__item soc__item-4"><a class="header__soc-link" href="<?php the_field('telegram'); ?>"></a></li>
+                                <li class="soc__item soc__item-5"><a class="header__soc-link" href="<?php the_field('whatsApp'); ?>"></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <ul class="header__soc soc">
-                        <li class="soc__item soc__item-1"><a class="header__soc-link" href="#"></a></li>
-                        <li class="soc__item soc__item-2"><a class="header__soc-link" href="#"></a></li>
-                        <li class="soc__item soc__item-3"><a class="header__soc-link" href="#"></a></li>
-                        <li class="soc__item soc__item-4"><a class="header__soc-link" href="#"></a></li>
-                        <li class="soc__item soc__item-5"><a class="header__soc-link" href="#"></a></li>
+                        <li class="soc__item soc__item-1"><a class="header__soc-link" href="tel:<?php the_field('phone_number') ;?>"></a></li>
+                        <li class="soc__item soc__item-2"><a class="header__soc-link" href="<?php the_field('vk'); ?>"></a></li>
+                        <li class="soc__item soc__item-3"><a class="header__soc-link" href="<?php the_field('instagram'); ?>"></a></li>
+                        <li class="soc__item soc__item-4"><a class="header__soc-link" href="<?php the_field('telegram'); ?>"></a></li>
+                        <li class="soc__item soc__item-5"><a class="header__soc-link" href="<?php the_field('whatsApp'); ?>"></a></li>
                     </ul>
 
                     <div class="header__init">
                         <a href="#" class="header__init-reg header__init-item">
-                            <img src="assets/img/user.svg" alt="Регистрация" title="Зарегистрироваться">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/user.svg" alt="Регистрация" title="Зарегистрироваться">
                             Регистрация
                         </a>
                         <a href="#" class="header__init-auth header__init-item">
-                            <img src="assets/img/login.svg" alt="Войти" title="Войти">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/login.svg" alt="Войти" title="Войти">
                             Войти
                         </a>
                     </div>
@@ -172,7 +174,7 @@
                             Детям
                         </li>
                         <li class="header__menu-item menu__btn">
-                            Свой дизайн <img class="menu__btn-img" src="assets/img/square.svg" alt="">
+                            Свой дизайн <img class="menu__btn-img" src="<?php bloginfo('template_url'); ?>/assets/img/square.svg" alt="">
                             <!-- <div class="menu__btn-box btn__box">
                             <div class="btn__box-items">
                                 <div class="btn__box-item btn__box-item--1">
@@ -404,4 +406,7 @@
                 </ul>
             </div>
         </div>
+
     </header>
+
+

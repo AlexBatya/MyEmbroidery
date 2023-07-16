@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(($) => {
 	const collArrow = $('#coll__link-img');
 	const collArrowLine = $('#coll__link-img line');
 	const tip = $('#coll__link-img path');

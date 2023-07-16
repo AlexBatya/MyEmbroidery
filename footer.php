@@ -89,16 +89,16 @@
                     <div class="footer__item footer__contacts">
                         <div class="footer__contacts-title">Наши контакты</div>
                         <ul class="footer__contacts-list">
-                            <li class="footer__contacts-item contacts__geo">Г. Казань ул. Восстания 1</li>
-                            <li class="footer__contacts-item contacts__tel">+7 (908) 20 98 771</li>
-                            <li class="footer__contacts-item contacts__mail">Tvoyavishevka@gmail.com</li>
+                            <li class="footer__contacts-item contacts__geo"><?php the_field('street'); ?></li>
+                            <li class="footer__contacts-item contacts__tel"><?php the_field('phone'); ?></li>
+                            <li class="footer__contacts-item contacts__mail"><?php the_field('mail'); ?></li>
                         </ul>
                         <div class="footer__contacts-title">Мы в соц. сетях</div>
                         <ul class="footer__contacts-soc contacts__soc">
-                            <li class="contacts__soc-item contacts__soc-vk"><a href="#"></a></li>
-                            <li class="contacts__soc-item contacts__soc-insta"><a href="#"></a></li>
-                            <li class="contacts__soc-item contacts__soc-tg"><a href="#"></a></li>
-                            <li class="contacts__soc-item contacts__soc-whatsapp"><a href="#"></a></li>
+                            <li class="contacts__soc-item contacts__soc-vk"><a href="<?php the_field('vk'); ?>"></a></li>
+                            <li class="contacts__soc-item contacts__soc-insta"><a href="<?php the_field('instagram'); ?>"></a></li>
+                            <li class="contacts__soc-item contacts__soc-tg"><a href="<?php the_field('telegram'); ?>"></a></li>
+                            <li class="contacts__soc-item contacts__soc-whatsapp"><a href="<?php the_field('whasApp'); ?>"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -109,8 +109,8 @@
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script> -->
